@@ -23,3 +23,5 @@ build
 
 # ignore yarn.lock
 yarn.lock
+
+api-definitions
