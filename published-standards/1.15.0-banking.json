@@ -28,7 +28,7 @@
     "paths": {
       "/banking/accounts": {
         "get": {
-          "summary": "Get Accounts",
+          "summary": "Get Account",
           "description": "Obtain a list of accounts",
           "operationId": "listAccounts",
           "x-scopes": [
