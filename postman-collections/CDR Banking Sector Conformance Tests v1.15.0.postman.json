@@ -3895,7 +3895,6 @@
 													"if (utils.minimumVariablesProvided() == true && utils.accessTokenProvided() == true && utils.clientHeaderProvided() == true)",
 													"{",
 													"        // Parse the response body",
-													"        // TXS DELETEMECOMMENT",
 													"        var jsonData;",
 													"        try { jsonData = pm.response.json(); } catch(e) {}",
 													"",
