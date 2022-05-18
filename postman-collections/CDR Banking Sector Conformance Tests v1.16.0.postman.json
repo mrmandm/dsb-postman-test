@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "01b015aa-3b66-4d39-981b-328316672158",
+		"_postman_id": "d6a104aa-ad33-4d53-ab1c-2888df18ee79",
 		"name": "CDR Banking Sector Conformance Tests v1.16.0",
 		"description": "# CDR Conformance Tests\nThis collection contains a series of conformance tests for the Consumer Data Right standards applicable to the designation for the Banking sector in Australia.\n\nThese tests do not constitute a full functional test of an implementation compliant with CDR standards. It is the obligation of data holders and data recipients to functionally test their implementations fully using whatever mechanism they choose.\n\nThese tests do contain comprehensive coverage of the requirements of the standards.  A data holder implementation that is able to pass all of the tests in this collection could be reasonably described as conformant to the CDR standards for the Banking sector.\n\n# Conformance Scope\nThis collection complies with v1.11.0 of the CDR standards.\n\nIt includes support for the following API end points:\n\n### Banking APIs\n\n* Get Accounts\n* Get Bulk Balances\n* Get Balances For Specific Accounts\n* Get Account Balance\n* Get Account Details\n* Get Transactions For Account\n* Get Transaction Detail\n* Get Direct Debits For Accounts\n* Get Bulk Direct Debits\n* Get Direct Debits For Specific Accounts\n* Get Scheduled Payments For Accounts\n* Get Scheduled Payments Bulk\n* Get Scheduled Payments For Specific Accounts\n* Get Payees\n* Get Payee Details\n* Get Products\n* Get Product Detail\n\n### Common APIs\n* Get Customer\n* Get Customer Detail\n* Get Status\n* Get Outages\n\n\n# Scope Exclusions\nThis collections does not cover:\n* CDR API end points not listed above\n* Negative scenarios that are not specifically addressed in the standards for individual end points\n* Non-functional requirements\n* Information Security Profile and associated end points\n* MA-SSL configuration\n\n# Change Log\n| Change Date | Change Description |\n|-------------|--------------------|\n|1st November 2019|Initial creation of the collection|\n|1st August 2021  |Updated documentation|\n\n\n# Contact Support: \n{\n\nName : Consumer Data Standards\n\nEmail : cdr-data61@csiro.au\n\n}",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -137,6 +137,7 @@
 													}
 												}
 											],
+											"id": "a336535e-893e-4a07-88b0-b6ef1bcce958",
 											"request": {
 												"method": "GET",
 												"header": [
@@ -361,6 +362,7 @@
 													}
 												}
 											],
+											"id": "6c9eb417-d5a7-4d42-9c1c-2e4a8d00c922",
 											"request": {
 												"method": "GET",
 												"header": [
@@ -557,6 +559,7 @@
 													}
 												}
 											],
+											"id": "aaf39f6c-f498-4d3b-98b6-99ffd9df760c",
 											"request": {
 												"method": "POST",
 												"header": [
@@ -763,6 +766,7 @@
 													}
 												}
 											],
+											"id": "8a6f7688-6cc8-4bbd-99f4-0ec644d8e665",
 											"request": {
 												"method": "POST",
 												"header": [
@@ -830,7 +834,8 @@
 											},
 											"response": []
 										}
-									]
+									],
+									"id": "bb557606-c7cb-406b-952d-46cf5a95dd43"
 								},
 								{
 									"name": "balances",
@@ -955,6 +960,7 @@
 													}
 												}
 											],
+											"id": "be7590e6-7fbf-45aa-81c9-440aa839a544",
 											"request": {
 												"method": "GET",
 												"header": [
@@ -1158,6 +1164,7 @@
 													}
 												}
 											],
+											"id": "62b35758-3d98-44ab-83fd-371310499e3b",
 											"request": {
 												"method": "GET",
 												"header": [
@@ -1332,6 +1339,7 @@
 													}
 												}
 											],
+											"id": "be315758-ddb4-40aa-a18b-fe49cb133462",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -1509,6 +1517,7 @@
 													}
 												}
 											],
+											"id": "42ae1bcd-8158-4cb2-9f12-be6c3c1ae64b",
 											"request": {
 												"method": "POST",
 												"header": [
@@ -1719,6 +1728,7 @@
 													}
 												}
 											],
+											"id": "c15c5ce9-310c-4a86-8554-2725dd3c46bb",
 											"request": {
 												"method": "POST",
 												"header": [
@@ -1846,6 +1856,7 @@
 													}
 												}
 											],
+											"id": "d6ddfefa-ff65-43e2-acf0-a96b1c6f630a",
 											"request": {
 												"method": "POST",
 												"header": [
@@ -1976,6 +1987,7 @@
 													}
 												}
 											],
+											"id": "fa8a8f77-7f4c-48ef-b997-bd8e7c159ee1",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -2035,6 +2047,7 @@
 													],
 													"variable": [
 														{
+															"id": "4ab6da8a-aefc-4d9c-900b-4a40b700922b",
 															"key": "accountId",
 															"value": "{{testAccountId1}}"
 														}
@@ -2043,7 +2056,8 @@
 											},
 											"response": []
 										}
-									]
+									],
+									"id": "aab76317-4928-4ecd-a8c7-ee18e81ce126"
 								},
 								{
 									"name": "{account Id}",
@@ -2173,6 +2187,7 @@
 															}
 														}
 													],
+													"id": "26aedf29-143d-4bcd-af3d-2211be4a013e",
 													"request": {
 														"method": "GET",
 														"header": [
@@ -2237,6 +2252,7 @@
 															],
 															"variable": [
 																{
+																	"id": "be13aae6-962f-4714-955e-9b73fb779026",
 																	"key": "accountId",
 																	"value": "{{testAccountId1}}",
 																	"description": "ID of the account to get transactions for.  Must have previously been returned by one of the account list end points."
@@ -2388,6 +2404,7 @@
 															}
 														}
 													],
+													"id": "290f5a22-a058-42cb-bf62-c8d94eabdde9",
 													"request": {
 														"method": "GET",
 														"header": [
@@ -2450,6 +2467,7 @@
 															],
 															"variable": [
 																{
+																	"id": "b0990b89-a1e7-4fe2-a93c-d7e8d0d05556",
 																	"key": "accountId",
 																	"value": "{{testAccountId1}}",
 																	"description": "ID of the account to get transactions for.  Must have previously been returned by one of the account list end points."
@@ -2523,6 +2541,7 @@
 															}
 														}
 													],
+													"id": "687c12dc-2a01-4089-9e4a-6650c40ccaee",
 													"request": {
 														"method": "GET",
 														"header": [
@@ -2576,10 +2595,12 @@
 															],
 															"variable": [
 																{
+																	"id": "668540a5-6954-4653-bc75-ad031400cc2c",
 																	"key": "accountId",
 																	"value": "{{testTransactionAccountId}}"
 																},
 																{
+																	"id": "16bdcf7e-10c6-42c6-a555-b27461179c17",
 																	"key": "transactionId",
 																	"value": "{{testTransactionId}}"
 																}
@@ -2589,6 +2610,7 @@
 													},
 													"response": [
 														{
+															"id": "9970e33b-74d0-468d-932d-9c8ba14442d5",
 															"name": "Success",
 															"originalRequest": {
 																"method": "GET",
@@ -2680,11 +2702,13 @@
 																}
 															],
 															"cookie": [],
+															"responseTime": null,
 															"body": "{\n\t\"data\": {\n        \"accountId\": \"{{testAccountId}}\",\n        \"transactionId\": \"{{testTransactionId}}\",\n        \"isDetailAvailable\": true,\n        \"type\": \"OTHER\",\n        \"status\": \"POSTED\",\n        \"description\": \"string\",\n        \"postingDateTime\": \"2019-11-01T14:52:00.000Z\",\n        \"executionDateTime\": \"2019-10-29T12:51:00.000Z\",\n        \"amount\": \"-46.86\",\n        \"currency\": \"AUD\",\n        \"reference\": \"lorem ipsum\",\n        \"billerCode\": \"123456\",\n        \"billerName\": \"Fake Biller Co\",\n        \"crn\": \"17237769\",\n        \"apcaNumber\": \"123456\",\n\t\t\"extendedData\": {\n\t\t\t\"service\": \"X2P1.01\",\n\t\t\t\"payee\": \"payee@payee.com\",\n\t\t\t\"extensionUType\": \"x2p101Payload\",\n\t\t\t\"x2p101Payload\": {\n\t\t\t\t\"extendedDescription\": \"Description of payment\",\n\t\t\t\t\"endToEndId\": \"1234567890\"\n\t\t\t}\n\t\t}\n\t},\n\t\"links\": {\n\t    \"self\": \"https://data.holder.com.au/cds-au/v1/banking/accounts/{{testAccountId}}/transactions/{{testTransactionId}}\"\n\t},\n\t\"meta\": {}\n}"
 														}
 													]
 												}
-											]
+											],
+											"id": "15d6ea9c-8cf4-47fb-96d0-8916760d4274"
 										},
 										{
 											"name": "Get Direct Debits For Account - First page",
@@ -2805,6 +2829,7 @@
 													}
 												}
 											],
+											"id": "91b7b51f-8fb9-4730-81e8-fc79a6f11d20",
 											"request": {
 												"method": "GET",
 												"header": [
@@ -2869,6 +2894,7 @@
 													],
 													"variable": [
 														{
+															"id": "90080540-3727-475f-adb3-fcf980c4e3bf",
 															"key": "accountId",
 															"value": "{{testAccountId1}}",
 															"description": "ID of the account to get direct debit authorisations for.  Must have previously been returned by one of the account list end points."
@@ -2879,6 +2905,7 @@
 											},
 											"response": [
 												{
+													"id": "747ac076-b57f-4f5e-be4d-e89cf1098047",
 													"name": "Success",
 													"originalRequest": {
 														"method": "GET",
@@ -2962,6 +2989,7 @@
 														}
 													],
 													"cookie": [],
+													"responseTime": null,
 													"body": "{\n \"data\": {\n  \"directDebitAuthorisations\": [\n   {\n    \"accountId\": \"<string>\",\n    \"authorisedEntity\": {\n     \"description\": \"<string>\",\n     \"financialInstitution\": \"<string>\",\n     \"abn\": \"<string>\",\n     \"acn\": \"<string>\",\n     \"arbn\": \"<string>\"\n    },\n    \"lastDebitDateTime\": \"<string>\",\n    \"lastDebitAmount\": \"<string>\"\n   },\n   {\n    \"accountId\": \"<string>\",\n    \"authorisedEntity\": {\n     \"description\": \"<string>\",\n     \"financialInstitution\": \"<string>\",\n     \"abn\": \"<string>\",\n     \"acn\": \"<string>\",\n     \"arbn\": \"<string>\"\n    },\n    \"lastDebitDateTime\": \"<string>\",\n    \"lastDebitAmount\": \"<string>\"\n   }\n  ]\n },\n \"links\": {\n  \"self\": \"<string>\",\n  \"first\": \"<string>\",\n  \"prev\": \"<string>\",\n  \"next\": \"<string>\",\n  \"last\": \"<string>\"\n },\n \"meta\": {\n  \"totalPages\": \"<integer>\",\n  \"totalRecords\": \"<integer>\"\n }\n}"
 												}
 											]
@@ -3104,6 +3132,7 @@
 													}
 												}
 											],
+											"id": "b91746c7-06ce-4e4d-839f-1c64961e25b8",
 											"request": {
 												"method": "GET",
 												"header": [
@@ -3168,6 +3197,7 @@
 													],
 													"variable": [
 														{
+															"id": "6ad6fbbc-579b-45df-9b37-1f1c92cd6dc8",
 															"key": "accountId",
 															"value": "{{testAccountId1}}",
 															"description": "ID of the account to get direct debit authorisations for.  Must have previously been returned by one of the account list end points."
@@ -3178,6 +3208,7 @@
 											},
 											"response": [
 												{
+													"id": "de81dd85-3ca3-4b59-8803-5ffacc6f511d",
 													"name": "Success",
 													"originalRequest": {
 														"method": "GET",
@@ -3261,6 +3292,7 @@
 														}
 													],
 													"cookie": [],
+													"responseTime": null,
 													"body": "{\n \"data\": {\n  \"directDebitAuthorisations\": [\n   {\n    \"accountId\": \"<string>\",\n    \"authorisedEntity\": {\n     \"description\": \"<string>\",\n     \"financialInstitution\": \"<string>\",\n     \"abn\": \"<string>\",\n     \"acn\": \"<string>\",\n     \"arbn\": \"<string>\"\n    },\n    \"lastDebitDateTime\": \"<string>\",\n    \"lastDebitAmount\": \"<string>\"\n   },\n   {\n    \"accountId\": \"<string>\",\n    \"authorisedEntity\": {\n     \"description\": \"<string>\",\n     \"financialInstitution\": \"<string>\",\n     \"abn\": \"<string>\",\n     \"acn\": \"<string>\",\n     \"arbn\": \"<string>\"\n    },\n    \"lastDebitDateTime\": \"<string>\",\n    \"lastDebitAmount\": \"<string>\"\n   }\n  ]\n },\n \"links\": {\n  \"self\": \"<string>\",\n  \"first\": \"<string>\",\n  \"prev\": \"<string>\",\n  \"next\": \"<string>\",\n  \"last\": \"<string>\"\n },\n \"meta\": {\n  \"totalPages\": \"<integer>\",\n  \"totalRecords\": \"<integer>\"\n }\n}"
 												}
 											]
@@ -3383,6 +3415,7 @@
 													}
 												}
 											],
+											"id": "04b3b8a5-7743-4e5a-86da-c74200cc36f4",
 											"request": {
 												"method": "GET",
 												"header": [
@@ -3448,6 +3481,7 @@
 													],
 													"variable": [
 														{
+															"id": "7ea8f09b-5d5e-483f-a203-484685401d54",
 															"key": "accountId",
 															"value": "{{testAccountId1}}",
 															"description": "ID of the account to get scheduled payments for. Must have previously been returned by one of the account list end points. The account specified is the source account for the payment"
@@ -3458,6 +3492,7 @@
 											},
 											"response": [
 												{
+													"id": "b70e89a2-72d0-4c19-b7bc-1e695c4c6b43",
 													"name": "Success",
 													"originalRequest": {
 														"method": "GET",
@@ -3542,6 +3577,7 @@
 														}
 													],
 													"cookie": [],
+													"responseTime": null,
 													"body": "{\n \"data\": {\n  \"scheduledPayments\": [\n   {\n    \"from\": {\n     \"accountId\": \"<string>\"\n    },\n    \"payeeReference\": \"<string>\",\n    \"payerReference\": \"<string>\",\n    \"paymentSet\": [\n     {\n      \"to\": {\n       \"toUType\": \"<string>\",\n       \"accountId\": \"<string>\",\n       \"payeeId\": \"<string>\",\n       \"domestic\": {\n        \"payeeAccountUType\": \"<string>\",\n        \"account\": {\n         \"accountName\": \"<string>\",\n         \"accountNumber\": \"<string>\",\n         \"bsb\": \"<string>\"\n        },\n        \"card\": {\n         \"cardNumber\": \"<string>\"\n        },\n        \"payId\": {\n         \"identifier\": \"<string>\",\n         \"type\": \"<string>\",\n         \"name\": \"<string>\"\n        }\n       },\n       \"biller\": {\n        \"billerCode\": \"<string>\",\n        \"billerName\": \"<string>\",\n        \"crn\": \"<string>\"\n       },\n       \"international\": {\n        \"bankDetails\": {\n         \"accountNumber\": \"<string>\",\n         \"country\": \"<string>\",\n         \"bankAddress\": {\n          \"address\": \"<string>\",\n          \"name\": \"<string>\"\n         },\n         \"beneficiaryBankBIC\": \"<string>\",\n         \"fedWireNumber\": \"<string>\",\n         \"sortCode\": \"<string>\",\n         \"chipNumber\": \"<string>\",\n         \"routingNumber\": \"<string>\",\n         \"legalEntityIdentifier\": \"<string>\"\n        },\n        \"beneficiaryDetails\": {\n         \"country\": \"<string>\",\n         \"name\": \"<string>\",\n         \"message\": \"<string>\"\n        }\n       }\n      },\n      \"isAmountCalculated\": \"<boolean>\",\n      \"amount\": \"<string>\",\n      \"currency\": \"<string>\"\n     },\n     {\n      \"to\": {\n       \"toUType\": \"<string>\",\n       \"accountId\": \"<string>\",\n       \"payeeId\": \"<string>\",\n       \"domestic\": {\n        \"payeeAccountUType\": \"<string>\",\n        \"account\": {\n         \"accountName\": \"<string>\",\n         \"accountNumber\": \"<string>\",\n         \"bsb\": \"<string>\"\n        },\n        \"card\": {\n         \"cardNumber\": \"<string>\"\n        },\n        \"payId\": {\n         \"identifier\": \"<string>\",\n         \"type\": \"<string>\",\n         \"name\": \"<string>\"\n        }\n       },\n       \"biller\": {\n        \"billerCode\": \"<string>\",\n        \"billerName\": \"<string>\",\n        \"crn\": \"<string>\"\n       },\n       \"international\": {\n        \"bankDetails\": {\n         \"accountNumber\": \"<string>\",\n         \"country\": \"<string>\",\n         \"bankAddress\": {\n          \"address\": \"<string>\",\n          \"name\": \"<string>\"\n         },\n         \"beneficiaryBankBIC\": \"<string>\",\n         \"fedWireNumber\": \"<string>\",\n         \"sortCode\": \"<string>\",\n         \"chipNumber\": \"<string>\",\n         \"routingNumber\": \"<string>\",\n         \"legalEntityIdentifier\": \"<string>\"\n        },\n        \"beneficiaryDetails\": {\n         \"country\": \"<string>\",\n         \"name\": \"<string>\",\n         \"message\": \"<string>\"\n        }\n       }\n      },\n      \"isAmountCalculated\": \"<boolean>\",\n      \"amount\": \"<string>\",\n      \"currency\": \"<string>\"\n     }\n    ],\n    \"recurrence\": {\n     \"recurrenceUType\": \"<string>\",\n     \"nextPaymentDate\": \"<string>\",\n     \"onceOff\": {\n      \"paymentDate\": \"<string>\"\n     },\n     \"intervalSchedule\": {\n      \"intervals\": [\n       {\n        \"interval\": \"<string>\",\n        \"dayInInterval\": \"<string>\"\n       },\n       {\n        \"interval\": \"<string>\",\n        \"dayInInterval\": \"<string>\"\n       }\n      ],\n      \"finalPaymentDate\": \"<string>\",\n      \"paymentsRemaining\": \"<integer>\",\n      \"nonBusinessDayTreatment\": \"ON\"\n     },\n     \"lastWeekDay\": {\n      \"interval\": \"<string>\",\n      \"lastWeekDay\": \"<integer>\",\n      \"finalPaymentDate\": \"<string>\",\n      \"paymentsRemaining\": \"<integer>\"\n     },\n     \"eventBased\": {\n      \"description\": \"<string>\"\n     }\n    },\n    \"scheduledPaymentId\": \"<string>\",\n    \"status\": \"<string>\",\n    \"nickname\": \"<string>\"\n   },\n   {\n    \"from\": {\n     \"accountId\": \"<string>\"\n    },\n    \"payeeReference\": \"<string>\",\n    \"payerReference\": \"<string>\",\n    \"paymentSet\": [\n     {\n      \"to\": {\n       \"toUType\": \"<string>\",\n       \"accountId\": \"<string>\",\n       \"payeeId\": \"<string>\",\n       \"domestic\": {\n        \"payeeAccountUType\": \"<string>\",\n        \"account\": {\n         \"accountName\": \"<string>\",\n         \"accountNumber\": \"<string>\",\n         \"bsb\": \"<string>\"\n        },\n        \"card\": {\n         \"cardNumber\": \"<string>\"\n        },\n        \"payId\": {\n         \"identifier\": \"<string>\",\n         \"type\": \"<string>\",\n         \"name\": \"<string>\"\n        }\n       },\n       \"biller\": {\n        \"billerCode\": \"<string>\",\n        \"billerName\": \"<string>\",\n        \"crn\": \"<string>\"\n       },\n       \"international\": {\n        \"bankDetails\": {\n         \"accountNumber\": \"<string>\",\n         \"country\": \"<string>\",\n         \"bankAddress\": {\n          \"address\": \"<string>\",\n          \"name\": \"<string>\"\n         },\n         \"beneficiaryBankBIC\": \"<string>\",\n         \"fedWireNumber\": \"<string>\",\n         \"sortCode\": \"<string>\",\n         \"chipNumber\": \"<string>\",\n         \"routingNumber\": \"<string>\",\n         \"legalEntityIdentifier\": \"<string>\"\n        },\n        \"beneficiaryDetails\": {\n         \"country\": \"<string>\",\n         \"name\": \"<string>\",\n         \"message\": \"<string>\"\n        }\n       }\n      },\n      \"isAmountCalculated\": \"<boolean>\",\n      \"amount\": \"<string>\",\n      \"currency\": \"<string>\"\n     },\n     {\n      \"to\": {\n       \"toUType\": \"<string>\",\n       \"accountId\": \"<string>\",\n       \"payeeId\": \"<string>\",\n       \"domestic\": {\n        \"payeeAccountUType\": \"<string>\",\n        \"account\": {\n         \"accountName\": \"<string>\",\n         \"accountNumber\": \"<string>\",\n         \"bsb\": \"<string>\"\n        },\n        \"card\": {\n         \"cardNumber\": \"<string>\"\n        },\n        \"payId\": {\n         \"identifier\": \"<string>\",\n         \"type\": \"<string>\",\n         \"name\": \"<string>\"\n        }\n       },\n       \"biller\": {\n        \"billerCode\": \"<string>\",\n        \"billerName\": \"<string>\",\n        \"crn\": \"<string>\"\n       },\n       \"international\": {\n        \"bankDetails\": {\n         \"accountNumber\": \"<string>\",\n         \"country\": \"<string>\",\n         \"bankAddress\": {\n          \"address\": \"<string>\",\n          \"name\": \"<string>\"\n         },\n         \"beneficiaryBankBIC\": \"<string>\",\n         \"fedWireNumber\": \"<string>\",\n         \"sortCode\": \"<string>\",\n         \"chipNumber\": \"<string>\",\n         \"routingNumber\": \"<string>\",\n         \"legalEntityIdentifier\": \"<string>\"\n        },\n        \"beneficiaryDetails\": {\n         \"country\": \"<string>\",\n         \"name\": \"<string>\",\n         \"message\": \"<string>\"\n        }\n       }\n      },\n      \"isAmountCalculated\": \"<boolean>\",\n      \"amount\": \"<string>\",\n      \"currency\": \"<string>\"\n     }\n    ],\n    \"recurrence\": {\n     \"recurrenceUType\": \"<string>\",\n     \"nextPaymentDate\": \"<string>\",\n     \"onceOff\": {\n      \"paymentDate\": \"<string>\"\n     },\n     \"intervalSchedule\": {\n      \"intervals\": [\n       {\n        \"interval\": \"<string>\",\n        \"dayInInterval\": \"<string>\"\n       },\n       {\n        \"interval\": \"<string>\",\n        \"dayInInterval\": \"<string>\"\n       }\n      ],\n      \"finalPaymentDate\": \"<string>\",\n      \"paymentsRemaining\": \"<integer>\",\n      \"nonBusinessDayTreatment\": \"ON\"\n     },\n     \"lastWeekDay\": {\n      \"interval\": \"<string>\",\n      \"lastWeekDay\": \"<integer>\",\n      \"finalPaymentDate\": \"<string>\",\n      \"paymentsRemaining\": \"<integer>\"\n     },\n     \"eventBased\": {\n      \"description\": \"<string>\"\n     }\n    },\n    \"scheduledPaymentId\": \"<string>\",\n    \"status\": \"<string>\",\n    \"nickname\": \"<string>\"\n   }\n  ]\n },\n \"links\": {\n  \"self\": \"<string>\",\n  \"first\": \"<string>\",\n  \"prev\": \"<string>\",\n  \"next\": \"<string>\",\n  \"last\": \"<string>\"\n },\n \"meta\": {\n  \"totalPages\": \"<integer>\",\n  \"totalRecords\": \"<integer>\"\n }\n}"
 												}
 											]
@@ -3678,6 +3714,7 @@
 													}
 												}
 											],
+											"id": "899fb1d9-225f-41dd-a0a8-1994298a876d",
 											"request": {
 												"method": "GET",
 												"header": [
@@ -3743,6 +3780,7 @@
 													],
 													"variable": [
 														{
+															"id": "7a716790-6027-45dc-81d1-cf15d845b15e",
 															"key": "accountId",
 															"value": "{{testAccountId1}}",
 															"description": "ID of the account to get scheduled payments for. Must have previously been returned by one of the account list end points. The account specified is the source account for the payment"
@@ -3753,6 +3791,7 @@
 											},
 											"response": [
 												{
+													"id": "56a10b69-8fca-497d-a8c2-e1197782cbad",
 													"name": "Success",
 													"originalRequest": {
 														"method": "GET",
@@ -3837,11 +3876,13 @@
 														}
 													],
 													"cookie": [],
+													"responseTime": null,
 													"body": "{\n \"data\": {\n  \"scheduledPayments\": [\n   {\n    \"from\": {\n     \"accountId\": \"<string>\"\n    },\n    \"payeeReference\": \"<string>\",\n    \"payerReference\": \"<string>\",\n    \"paymentSet\": [\n     {\n      \"to\": {\n       \"toUType\": \"<string>\",\n       \"accountId\": \"<string>\",\n       \"payeeId\": \"<string>\",\n       \"domestic\": {\n        \"payeeAccountUType\": \"<string>\",\n        \"account\": {\n         \"accountName\": \"<string>\",\n         \"accountNumber\": \"<string>\",\n         \"bsb\": \"<string>\"\n        },\n        \"card\": {\n         \"cardNumber\": \"<string>\"\n        },\n        \"payId\": {\n         \"identifier\": \"<string>\",\n         \"type\": \"<string>\",\n         \"name\": \"<string>\"\n        }\n       },\n       \"biller\": {\n        \"billerCode\": \"<string>\",\n        \"billerName\": \"<string>\",\n        \"crn\": \"<string>\"\n       },\n       \"international\": {\n        \"bankDetails\": {\n         \"accountNumber\": \"<string>\",\n         \"country\": \"<string>\",\n         \"bankAddress\": {\n          \"address\": \"<string>\",\n          \"name\": \"<string>\"\n         },\n         \"beneficiaryBankBIC\": \"<string>\",\n         \"fedWireNumber\": \"<string>\",\n         \"sortCode\": \"<string>\",\n         \"chipNumber\": \"<string>\",\n         \"routingNumber\": \"<string>\",\n         \"legalEntityIdentifier\": \"<string>\"\n        },\n        \"beneficiaryDetails\": {\n         \"country\": \"<string>\",\n         \"name\": \"<string>\",\n         \"message\": \"<string>\"\n        }\n       }\n      },\n      \"isAmountCalculated\": \"<boolean>\",\n      \"amount\": \"<string>\",\n      \"currency\": \"<string>\"\n     },\n     {\n      \"to\": {\n       \"toUType\": \"<string>\",\n       \"accountId\": \"<string>\",\n       \"payeeId\": \"<string>\",\n       \"domestic\": {\n        \"payeeAccountUType\": \"<string>\",\n        \"account\": {\n         \"accountName\": \"<string>\",\n         \"accountNumber\": \"<string>\",\n         \"bsb\": \"<string>\"\n        },\n        \"card\": {\n         \"cardNumber\": \"<string>\"\n        },\n        \"payId\": {\n         \"identifier\": \"<string>\",\n         \"type\": \"<string>\",\n         \"name\": \"<string>\"\n        }\n       },\n       \"biller\": {\n        \"billerCode\": \"<string>\",\n        \"billerName\": \"<string>\",\n        \"crn\": \"<string>\"\n       },\n       \"international\": {\n        \"bankDetails\": {\n         \"accountNumber\": \"<string>\",\n         \"country\": \"<string>\",\n         \"bankAddress\": {\n          \"address\": \"<string>\",\n          \"name\": \"<string>\"\n         },\n         \"beneficiaryBankBIC\": \"<string>\",\n         \"fedWireNumber\": \"<string>\",\n         \"sortCode\": \"<string>\",\n         \"chipNumber\": \"<string>\",\n         \"routingNumber\": \"<string>\",\n         \"legalEntityIdentifier\": \"<string>\"\n        },\n        \"beneficiaryDetails\": {\n         \"country\": \"<string>\",\n         \"name\": \"<string>\",\n         \"message\": \"<string>\"\n        }\n       }\n      },\n      \"isAmountCalculated\": \"<boolean>\",\n      \"amount\": \"<string>\",\n      \"currency\": \"<string>\"\n     }\n    ],\n    \"recurrence\": {\n     \"recurrenceUType\": \"<string>\",\n     \"nextPaymentDate\": \"<string>\",\n     \"onceOff\": {\n      \"paymentDate\": \"<string>\"\n     },\n     \"intervalSchedule\": {\n      \"intervals\": [\n       {\n        \"interval\": \"<string>\",\n        \"dayInInterval\": \"<string>\"\n       },\n       {\n        \"interval\": \"<string>\",\n        \"dayInInterval\": \"<string>\"\n       }\n      ],\n      \"finalPaymentDate\": \"<string>\",\n      \"paymentsRemaining\": \"<integer>\",\n      \"nonBusinessDayTreatment\": \"ON\"\n     },\n     \"lastWeekDay\": {\n      \"interval\": \"<string>\",\n      \"lastWeekDay\": \"<integer>\",\n      \"finalPaymentDate\": \"<string>\",\n      \"paymentsRemaining\": \"<integer>\"\n     },\n     \"eventBased\": {\n      \"description\": \"<string>\"\n     }\n    },\n    \"scheduledPaymentId\": \"<string>\",\n    \"status\": \"<string>\",\n    \"nickname\": \"<string>\"\n   },\n   {\n    \"from\": {\n     \"accountId\": \"<string>\"\n    },\n    \"payeeReference\": \"<string>\",\n    \"payerReference\": \"<string>\",\n    \"paymentSet\": [\n     {\n      \"to\": {\n       \"toUType\": \"<string>\",\n       \"accountId\": \"<string>\",\n       \"payeeId\": \"<string>\",\n       \"domestic\": {\n        \"payeeAccountUType\": \"<string>\",\n        \"account\": {\n         \"accountName\": \"<string>\",\n         \"accountNumber\": \"<string>\",\n         \"bsb\": \"<string>\"\n        },\n        \"card\": {\n         \"cardNumber\": \"<string>\"\n        },\n        \"payId\": {\n         \"identifier\": \"<string>\",\n         \"type\": \"<string>\",\n         \"name\": \"<string>\"\n        }\n       },\n       \"biller\": {\n        \"billerCode\": \"<string>\",\n        \"billerName\": \"<string>\",\n        \"crn\": \"<string>\"\n       },\n       \"international\": {\n        \"bankDetails\": {\n         \"accountNumber\": \"<string>\",\n         \"country\": \"<string>\",\n         \"bankAddress\": {\n          \"address\": \"<string>\",\n          \"name\": \"<string>\"\n         },\n         \"beneficiaryBankBIC\": \"<string>\",\n         \"fedWireNumber\": \"<string>\",\n         \"sortCode\": \"<string>\",\n         \"chipNumber\": \"<string>\",\n         \"routingNumber\": \"<string>\",\n         \"legalEntityIdentifier\": \"<string>\"\n        },\n        \"beneficiaryDetails\": {\n         \"country\": \"<string>\",\n         \"name\": \"<string>\",\n         \"message\": \"<string>\"\n        }\n       }\n      },\n      \"isAmountCalculated\": \"<boolean>\",\n      \"amount\": \"<string>\",\n      \"currency\": \"<string>\"\n     },\n     {\n      \"to\": {\n       \"toUType\": \"<string>\",\n       \"accountId\": \"<string>\",\n       \"payeeId\": \"<string>\",\n       \"domestic\": {\n        \"payeeAccountUType\": \"<string>\",\n        \"account\": {\n         \"accountName\": \"<string>\",\n         \"accountNumber\": \"<string>\",\n         \"bsb\": \"<string>\"\n        },\n        \"card\": {\n         \"cardNumber\": \"<string>\"\n        },\n        \"payId\": {\n         \"identifier\": \"<string>\",\n         \"type\": \"<string>\",\n         \"name\": \"<string>\"\n        }\n       },\n       \"biller\": {\n        \"billerCode\": \"<string>\",\n        \"billerName\": \"<string>\",\n        \"crn\": \"<string>\"\n       },\n       \"international\": {\n        \"bankDetails\": {\n         \"accountNumber\": \"<string>\",\n         \"country\": \"<string>\",\n         \"bankAddress\": {\n          \"address\": \"<string>\",\n          \"name\": \"<string>\"\n         },\n         \"beneficiaryBankBIC\": \"<string>\",\n         \"fedWireNumber\": \"<string>\",\n         \"sortCode\": \"<string>\",\n         \"chipNumber\": \"<string>\",\n         \"routingNumber\": \"<string>\",\n         \"legalEntityIdentifier\": \"<string>\"\n        },\n        \"beneficiaryDetails\": {\n         \"country\": \"<string>\",\n         \"name\": \"<string>\",\n         \"message\": \"<string>\"\n        }\n       }\n      },\n      \"isAmountCalculated\": \"<boolean>\",\n      \"amount\": \"<string>\",\n      \"currency\": \"<string>\"\n     }\n    ],\n    \"recurrence\": {\n     \"recurrenceUType\": \"<string>\",\n     \"nextPaymentDate\": \"<string>\",\n     \"onceOff\": {\n      \"paymentDate\": \"<string>\"\n     },\n     \"intervalSchedule\": {\n      \"intervals\": [\n       {\n        \"interval\": \"<string>\",\n        \"dayInInterval\": \"<string>\"\n       },\n       {\n        \"interval\": \"<string>\",\n        \"dayInInterval\": \"<string>\"\n       }\n      ],\n      \"finalPaymentDate\": \"<string>\",\n      \"paymentsRemaining\": \"<integer>\",\n      \"nonBusinessDayTreatment\": \"ON\"\n     },\n     \"lastWeekDay\": {\n      \"interval\": \"<string>\",\n      \"lastWeekDay\": \"<integer>\",\n      \"finalPaymentDate\": \"<string>\",\n      \"paymentsRemaining\": \"<integer>\"\n     },\n     \"eventBased\": {\n      \"description\": \"<string>\"\n     }\n    },\n    \"scheduledPaymentId\": \"<string>\",\n    \"status\": \"<string>\",\n    \"nickname\": \"<string>\"\n   }\n  ]\n },\n \"links\": {\n  \"self\": \"<string>\",\n  \"first\": \"<string>\",\n  \"prev\": \"<string>\",\n  \"next\": \"<string>\",\n  \"last\": \"<string>\"\n },\n \"meta\": {\n  \"totalPages\": \"<integer>\",\n  \"totalRecords\": \"<integer>\"\n }\n}"
 												}
 											]
 										}
-									]
+									],
+									"id": "2c8dc7ab-87a8-40af-bd61-39702d2b2490"
 								},
 								{
 									"name": "Get Accounts - First page",
@@ -3962,6 +4003,7 @@
 											}
 										}
 									],
+									"id": "417ab3c6-81a0-472b-a4bc-097e5e4b82b9",
 									"request": {
 										"method": "GET",
 										"header": [
@@ -4170,6 +4212,7 @@
 											}
 										}
 									],
+									"id": "5c82ac08-85e3-49e7-97b9-1bc81fa0feec",
 									"request": {
 										"method": "GET",
 										"header": [
@@ -4313,6 +4356,7 @@
 											}
 										}
 									],
+									"id": "f93f8e03-8036-4954-a5dc-0282997e7fcb",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -4378,6 +4422,7 @@
 											],
 											"variable": [
 												{
+													"id": "a68a5e84-190c-4103-a7d2-cddcd361ae80",
 													"key": "accountId",
 													"value": "{{testAccountId1}}"
 												}
@@ -4441,6 +4486,7 @@
 											}
 										}
 									],
+									"id": "27f3df97-06b3-4a2e-b8ac-fa7c3256b262",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -4506,6 +4552,7 @@
 											],
 											"variable": [
 												{
+													"id": "d93f3830-edac-4b9b-bdea-d6c61ced8d39",
 													"key": "accountId",
 													"value": "{{invalidId}}"
 												}
@@ -4585,6 +4632,7 @@
 											}
 										}
 									],
+									"id": "90cb5be1-4c30-40d1-98c8-fb9e30cf55f1",
 									"request": {
 										"method": "GET",
 										"header": [
@@ -4654,7 +4702,8 @@
 									},
 									"response": []
 								}
-							]
+							],
+							"id": "be64b9b2-963b-4099-b40a-696ba179e9d8"
 						},
 						{
 							"name": "payments",
@@ -4783,6 +4832,7 @@
 													}
 												}
 											],
+											"id": "c7560e4e-9471-4532-96cd-2a0d5744b18d",
 											"request": {
 												"method": "GET",
 												"header": [
@@ -5005,6 +5055,7 @@
 													}
 												}
 											],
+											"id": "82d97f93-09b7-45b6-9bf0-4b0f0bb03290",
 											"request": {
 												"method": "GET",
 												"header": [
@@ -5205,6 +5256,7 @@
 													}
 												}
 											],
+											"id": "20cbf08a-dfe3-4e5b-b551-c925c900e8db",
 											"request": {
 												"method": "POST",
 												"header": [
@@ -5415,6 +5467,7 @@
 													}
 												}
 											],
+											"id": "76690028-2b3e-4254-a00d-9f6a906f0185",
 											"request": {
 												"method": "POST",
 												"header": [
@@ -5485,9 +5538,11 @@
 											},
 											"response": []
 										}
-									]
+									],
+									"id": "69229a5f-b8f0-43a3-b214-b33699f0f55b"
 								}
-							]
+							],
+							"id": "d0f79d99-18e5-4761-abba-0a54f99bd447"
 						},
 						{
 							"name": "payees",
@@ -5606,6 +5661,7 @@
 											}
 										}
 									],
+									"id": "9283a2b7-84b3-41ef-8ad9-03ac3196cbc0",
 									"request": {
 										"method": "GET",
 										"header": [
@@ -5820,6 +5876,7 @@
 											}
 										}
 									],
+									"id": "174d312f-11f3-4159-9c56-922165ea8b4b",
 									"request": {
 										"method": "GET",
 										"header": [
@@ -5955,6 +6012,7 @@
 											}
 										}
 									],
+									"id": "6e6425cd-9268-4e4d-aa09-963e79772659",
 									"request": {
 										"method": "GET",
 										"header": [
@@ -6013,6 +6071,7 @@
 											],
 											"variable": [
 												{
+													"id": "0f624fc5-dcf6-43a8-a7f3-4c45a0896ea8",
 													"key": "payeeId",
 													"value": "{{testPayeeId}}",
 													"description": "The ID used to locate the details of a particular payee"
@@ -6058,6 +6117,7 @@
 											}
 										}
 									],
+									"id": "b2da9180-c4c8-4946-b770-3e7d1d018f3e",
 									"request": {
 										"method": "GET",
 										"header": [
@@ -6116,6 +6176,7 @@
 											],
 											"variable": [
 												{
+													"id": "7e646570-9215-4914-8e06-1ad2f3047a2e",
 													"key": "payeeId",
 													"value": "{{invalidId}}",
 													"description": "The ID used to locate the details of a particular payee"
@@ -6126,7 +6187,8 @@
 									},
 									"response": []
 								}
-							]
+							],
+							"id": "c4e18bfb-2eff-4598-98e7-62ee7254d14b"
 						},
 						{
 							"name": "products",
@@ -6257,6 +6319,7 @@
 											}
 										}
 									],
+									"id": "d6989f49-075e-4cba-a0d2-3796ea4e7edc",
 									"request": {
 										"method": "GET",
 										"header": [
@@ -6481,6 +6544,7 @@
 											}
 										}
 									],
+									"id": "ee1b8b6d-3eb2-4a10-93d0-420d51ecc1c2",
 									"request": {
 										"method": "GET",
 										"header": [
@@ -6586,6 +6650,7 @@
 											}
 										}
 									],
+									"id": "c1ffc958-a0ee-4e4a-bd72-f2794c05697f",
 									"request": {
 										"method": "GET",
 										"header": [
@@ -6619,6 +6684,7 @@
 											],
 											"variable": [
 												{
+													"id": "3a04674f-afdd-478d-994a-7e8494949679",
 													"key": "productId",
 													"value": "{{testProductId}}"
 												}
@@ -6671,6 +6737,7 @@
 											}
 										}
 									],
+									"id": "5a7f8a32-5837-43f2-8282-e304768947e8",
 									"request": {
 										"method": "GET",
 										"header": [
@@ -6704,6 +6771,7 @@
 											],
 											"variable": [
 												{
+													"id": "61f4784d-50fb-44cd-9fed-0570773b904c",
 													"key": "productId",
 													"value": "{{invalidId}}"
 												}
@@ -6713,9 +6781,11 @@
 									},
 									"response": []
 								}
-							]
+							],
+							"id": "c1ce9d77-36cc-4ccf-b50f-d4cc9b7b52bb"
 						}
-					]
+					],
+					"id": "163d62cb-c6c2-4e44-ab77-b0d6a9600aef"
 				},
 				{
 					"name": "common",
@@ -6789,6 +6859,7 @@
 											}
 										}
 									],
+									"id": "ae7fd489-43f1-4ee3-9fe8-f8847299597d",
 									"request": {
 										"method": "GET",
 										"header": [
@@ -6902,6 +6973,7 @@
 											}
 										}
 									],
+									"id": "072e2385-ca68-4317-b1a7-ebbc3ff68658",
 									"request": {
 										"method": "GET",
 										"header": [
@@ -6963,9 +7035,11 @@
 									},
 									"response": []
 								}
-							]
+							],
+							"id": "a24276ac-ed7e-456c-9c4b-1a196dcde839"
 						}
-					]
+					],
+					"id": "ee33c55f-6596-425f-9f66-a81fa788aa68"
 				},
 				{
 					"name": "discovery",
@@ -7025,6 +7099,7 @@
 									}
 								}
 							],
+							"id": "ea7818ba-83ed-4a0e-a094-4c8f3688f04c",
 							"request": {
 								"auth": {
 									"type": "noauth"
@@ -7117,6 +7192,7 @@
 									}
 								}
 							],
+							"id": "0732b4bb-bed9-4080-a809-70074d8bcd85",
 							"request": {
 								"auth": {
 									"type": "noauth"
@@ -7153,13 +7229,16 @@
 							},
 							"response": []
 						}
-					]
+					],
+					"id": "8ca3f5d7-8d5e-47bc-a57e-dbdd295a9301"
 				}
-			]
+			],
+			"id": "6b60b5ec-1f1d-41ec-a34d-e0b01bd51375"
 		},
 		{
 			"name": "Specialised Tests",
-			"item": []
+			"item": [],
+			"id": "914fbd00-7785-4071-a33a-06358d971efa"
 		}
 	],
 	"auth": {
@@ -7414,234 +7493,292 @@
 	],
 	"variable": [
 		{
+			"id": "402d060c-42e7-49eb-b9ce-fba1ff2343bf",
 			"key": "interactionId",
 			"value": "37e3194e-c1f3-4685-8b8d-6cea463f37f4"
 		},
 		{
+			"id": "ab0e72b4-1130-4f00-9979-becedf7aeda1",
 			"key": "cdsClientHeader",
 			"value": "Q29uc3VtZXIgRGF0YSBSaWdodA=="
 		},
 		{
+			"id": "aa991357-da35-4653-910e-b548d50eaf70",
 			"key": "invalidId",
 			"value": "xxxINVALIDxxx"
 		},
 		{
+			"id": "a1284a22-c7f1-4d1b-a2cd-8ac79c083f5e",
 			"key": "effective",
 			"value": ""
 		},
 		{
+			"id": "9c28eda4-a0f5-4b6e-8aff-bb8be9dc5a58",
 			"key": "totalDirectDebitPages",
 			"value": ""
 		},
 		{
+			"id": "f715e6c5-a406-498f-9a2d-a7bc10e6b69b",
 			"key": "pageArray",
 			"value": ""
 		},
 		{
+			"id": "d1a6b996-22fb-4024-b1b3-7c896a53bce3",
 			"key": "totalBulkBalancePages",
 			"value": ""
 		},
 		{
+			"id": "762a357c-69af-466a-8fdb-94c8142babb8",
 			"key": "totalTransactionPages",
 			"value": ""
 		},
 		{
+			"id": "c41770b0-c746-4ef5-9e28-477c458cda83",
 			"key": "totalScheduledPaymentsPages",
 			"value": ""
 		},
 		{
+			"id": "401cf7b4-9fce-4eba-bb8e-9ed92047bf05",
 			"key": "totalAccountsPages",
 			"value": ""
 		},
 		{
+			"id": "bbbafc00-9bae-40db-af1c-05284724068b",
 			"key": "totalPayeePages",
 			"value": ""
 		},
 		{
+			"id": "8fd81167-7694-4e2b-a3f6-9c39730fe05b",
 			"key": "productCategory",
 			"value": ""
 		},
 		{
+			"id": "27af7524-04cd-4ccc-a4d9-9e0ff2715c16",
 			"key": "totalProductPages",
 			"value": ""
 		},
 		{
+			"id": "ef8dd632-acb1-4d10-bc4e-94ccb5d1d071",
 			"key": "baseUrl",
 			"value": ""
 		},
 		{
+			"id": "1ef2c04f-fa71-4f92-b5dc-9afbec6406d2",
 			"key": "version",
 			"value": "1.16.0"
 		},
 		{
+			"id": "d3ca321f-0c4e-44c2-ba3b-e1a441cf1906",
 			"key": "x-v",
 			"value": ""
 		},
 		{
+			"id": "125ff563-e8bd-4e17-8df7-3ed9b7cc364d",
 			"key": "x-min-v",
 			"value": ""
 		},
 		{
+			"id": "b38a9b56-2f8f-4da5-8f7f-0d3f943c6bc5",
 			"key": "accessToken",
 			"value": ""
 		},
 		{
+			"id": "c987679d-da18-4373-b46c-9054c25093b1",
 			"key": "testAccountId1",
 			"value": ""
 		},
 		{
+			"id": "41327ca0-6cce-4a1e-a4fc-d7526b85de29",
 			"key": "testAccountId2",
 			"value": ""
 		},
 		{
+			"id": "f6b3d7e0-84f1-4709-85a9-179776494876",
 			"key": "testProductId",
 			"value": ""
 		},
 		{
+			"id": "c848a8b2-f5dd-4571-8d1a-6b63f6a9879c",
 			"key": "testPayeeId",
 			"value": ""
 		},
 		{
+			"id": "42d98c6f-a759-4cdb-96df-40a3ec1faae9",
 			"key": "testTransactionId",
 			"value": ""
 		},
 		{
+			"id": "a2ff1ca9-cdf2-4bf1-965f-e6c1cde72a22",
 			"key": "pageSizeBulkDirectDebits",
 			"value": ""
 		},
 		{
+			"id": "01497478-9d5f-42b7-ad76-a0ef20fee14b",
 			"key": "pageSizeBulkBalances",
 			"value": ""
 		},
 		{
+			"id": "32650439-cc6c-422e-8146-46f77aa50f7e",
 			"key": "pageSizeTransactions",
 			"value": ""
 		},
 		{
+			"id": "652bbe22-1fc2-424b-a62d-7c06faf0f400",
 			"key": "pageSizeAccounts",
 			"value": ""
 		},
 		{
+			"id": "b80a1822-d4e7-4775-99fe-6788f54b5a57",
 			"key": "pageSizePayees",
 			"value": ""
 		},
 		{
+			"id": "78fdcb42-9794-4aca-9fee-2b3d4fd592e8",
 			"key": "pageSizeScheduledPayments",
 			"value": ""
 		},
 		{
+			"id": "2b5e6d2e-fe94-409c-a34e-13e18f0cbf23",
 			"key": "pageSizeProducts",
 			"value": ""
 		},
 		{
+			"id": "67615a8c-b875-48a2-9669-28f8d098ec47",
 			"key": "collectionVariables",
 			"value": ""
 		},
 		{
+			"id": "80fedc91-1250-45bd-bcab-d11eff1b3ab4",
 			"key": "intitalised",
 			"value": ""
 		},
 		{
+			"id": "62664ea9-5e2d-4d94-bf13-91b544654cfe",
 			"key": "pageSize",
 			"value": ""
 		},
 		{
+			"id": "57e56441-78cf-4682-82fa-010df4ab0b76",
 			"key": "BankingBalance",
 			"value": ""
 		},
 		{
+			"id": "ff1ea1ef-8466-4134-8d8e-d5930f0d0301",
 			"key": "ResponseBankingAccountsBalanceList",
 			"value": ""
 		},
 		{
+			"id": "bc4b93a5-5b84-4248-a9e4-75cadbfd2b4a",
 			"key": "ResponseBankingTransactionList",
 			"value": ""
 		},
 		{
+			"id": "75ae74fd-fb4e-4cfb-9341-47d6594d83b0",
 			"key": "ResponseBankingAccountList",
 			"value": ""
 		},
 		{
+			"id": "1ac8b301-0ef0-4eab-990c-57c6fb4ad6e6",
 			"key": "ResponseBankingAccountsBalanceById",
 			"value": ""
 		},
 		{
+			"id": "9675b62d-c275-41fe-93db-7f9241025ae0",
 			"key": "ResponseCommonCustomerDetailV2",
 			"value": ""
 		},
 		{
+			"id": "29f1a239-654e-47e3-acbf-2fba471c63ba",
 			"key": "ResponseBankingDirectDebitAuthorisationList",
 			"value": ""
 		},
 		{
+			"id": "3abcaed5-4f41-4e2c-8d83-48bee9da27a4",
 			"key": "ResponseBankingPayeeListV2",
 			"value": ""
 		},
 		{
+			"id": "5205591d-fb52-4f0f-a295-6d7686115fe2",
 			"key": "ResponseBankingAccountByIdV2",
 			"value": ""
 		},
 		{
+			"id": "a14dc021-1b15-47b6-872c-756f8d422424",
 			"key": "ResponseBankingScheduledPaymentsList",
 			"value": ""
 		},
 		{
+			"id": "284a9cad-28f8-4205-b249-56440fe64d71",
 			"key": "ResponseBankingProductListV2",
 			"value": ""
 		},
 		{
+			"id": "1c42c2fb-3e61-49e5-8592-9d0d15879d5d",
 			"key": "ResponseBankingPayeeByIdV2",
 			"value": ""
 		},
 		{
+			"id": "14d2a493-218d-4c99-9c0d-def443ff3d38",
 			"key": "ResponseBankingTransactionById",
 			"value": ""
 		},
 		{
+			"id": "05c0dd3a-95c1-44f9-848d-8b53d0b51576",
 			"key": "ResponseCommonCustomer",
 			"value": ""
 		},
 		{
+			"id": "60b586b6-7199-4237-958c-e7f7065aa313",
 			"key": "ResponseDiscoveryOutagesList",
 			"value": ""
 		},
 		{
+			"id": "4e8d4322-17a6-4766-8c5b-eba9133a6987",
 			"key": "ResponseCommonDiscoveryStatus",
 			"value": ""
 		},
 		{
+			"id": "00518292-ca21-47bb-8a70-57a5200bd7ca",
 			"key": "ResponseErrorListV2",
 			"value": ""
 		},
 		{
+			"id": "c59c99ff-bea3-40ea-9691-0d86ae2b4123",
 			"key": "ResponseBankingProductByIdV4",
 			"value": ""
 		},
 		{
+			"id": "f0c1380b-55e6-40c0-80c3-8355b93d80cb",
 			"key": "GlobalSchema",
 			"value": ""
 		},
 		{
+			"id": "cd08f4a4-f324-41ea-85c0-042dea46402e",
 			"key": "unauthenticatedCommonUrl",
 			"value": ""
 		},
 		{
+			"id": "4bbe56ab-c165-4e18-89d6-2c57754bfc49",
 			"key": "authenticatedCommonUrl",
 			"value": ""
 		},
 		{
+			"id": "3cfeff0c-e365-41c6-a405-6a3368c1ba53",
 			"key": "unauthenticatedResourceUrl",
 			"value": ""
 		},
 		{
+			"id": "c85109b1-d683-4d39-8e58-61ad32f0beb7",
 			"key": "authenticatedResourceUrl",
 			"value": ""
 		},
 		{
+			"id": "959a782e-5b13-4010-a99f-3ab7c949d9fe",
 			"key": "GlobalBankingSchema",
 			"value": ""
 		},
 		{
+			"id": "67feb9ec-c628-47ac-b340-a5ec97d7fee8",
 			"key": "GlobalCommonSchema",
 			"value": ""
 		}
